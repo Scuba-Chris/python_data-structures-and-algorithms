@@ -31,10 +31,15 @@ def test_insert_before(make_list):
     assert make_list.includes(29)
     assert make_list.to_string() == '19 18 17 16 29 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 '
 
-def test_inser_after(make_list):
+def test_insert_after(make_list):
     make_list.insert_after(18,31)
     assert make_list.includes(31)
     assert make_list.to_string() == '19 18 31 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 '
+
+def test_kth_from_end(make_list):
+    assert make_list.kth_from_end(3) == 4
+    
+    
 
 @pytest.fixture()
 def make_list():

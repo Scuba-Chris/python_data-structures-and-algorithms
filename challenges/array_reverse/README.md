@@ -8,5 +8,5 @@ We created a function that took in an array. Using the slice method on the array
 
 
 ## Solution
-
+![](../assets/array_reverse.jpg)
 
