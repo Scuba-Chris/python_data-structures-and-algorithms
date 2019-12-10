@@ -9,3 +9,6 @@ The first thing I had to do to get started with building this program was draw i
 
 ## API
 No APIs were used for this program
+
+![](../../challenges/assets/ll_insertions.jpg)
+![](../../challenges/assets/ll_kth_from_end.jpg)
