@@ -14,7 +14,6 @@ class LinkedList:
         while Node:
             results += str(Node.value) + ' '
             Node = Node.next
-        print(results)
         return results
 
     def insert(self, value):
@@ -55,8 +54,8 @@ class LinkedList:
 
     def insert_after(self, value, new_value):
         current = self.head
-        while current.next:
-            if current.next.value == value:
+        while current:
+            if current.value == value:
                 new_node = Node(new_value)
                 new_node.next = current.next
                 current.next = new_node
