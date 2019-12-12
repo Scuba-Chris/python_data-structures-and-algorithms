@@ -10,5 +10,13 @@ The first thing I had to do to get started with building this program was draw i
 ## API
 No APIs were used for this program
 
+### ll_insertions
 ![](../../challenges/assets/ll_insertions.jpg)
+
+### ll_kth_from_end
 ![](../../challenges/assets/ll_kth_from_end.jpg)
+
+### ll_merge
+![](../../challenges/assets/ll_merge1.jpg)
+![](../../challenges/assets/ll_merge2.jpg)
+
