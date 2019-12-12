@@ -74,3 +74,22 @@ class LinkedList:
         for _ in range(count - k):
             current = current.next
         return current.value
+
+    # def ll_merge(self):
+    #     if linked_list_one.head == None:
+    #         return linked_list_two
+    #     if linked_list_two.head == None:
+    #         return linked_list_one
+        
+    #     step_counter = 0
+
+    #     current_one = self.linked_list_one.head
+    #     current_two = self.linked_list_two.head
+    #     while current_one.next != None and current_two.next != None:
+    #         current_one = current_one.next
+    #         current_two = current_two.net
+    #         step_counter += 1
+
+        # for i in range(step_counter):
+            
+
