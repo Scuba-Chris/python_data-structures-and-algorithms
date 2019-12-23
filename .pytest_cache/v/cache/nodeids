@@ -1,0 +1,16 @@
+[
+  "data_structures/linked_list/test_linked_list.py::test_node_one",
+  "data_structures/linked_list/test_linked_list.py::test_node_two",
+  "data_structures/linked_list/test_linked_list.py::test_insert",
+  "data_structures/linked_list/test_linked_list.py::test_includes",
+  "data_structures/linked_list/test_linked_list.py::test_append",
+  "data_structures/linked_list/test_linked_list.py::test_insert_before",
+  "data_structures/linked_list/test_linked_list.py::test_insert_after",
+  "data_structures/linked_list/test_linked_list.py::test_kth_from_end",
+  "data_structures/stacks_and_queues/test_stacks_and_queues.py::test_push",
+  "data_structures/stacks_and_queues/test_stacks_and_queues.py::test_peek",
+  "data_structures/tree/test_tree.py::test_tree",
+  "data_structures/tree/test_tree.py::test_root",
+  "data_structures/tree/test_tree.py::test_add",
+  "data_structures/tree/test_tree.py::test_pre_order"
+]

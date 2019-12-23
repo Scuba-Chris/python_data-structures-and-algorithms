@@ -14,7 +14,7 @@ class Stack:
         self.top = new_top
 
     def pop(self):
-        temp = self.top
+        # temp = self.top
         new_top = self.top.next
         self.top = new_top
         return new_top.value
@@ -24,7 +24,7 @@ class Stack:
         return top_value
     
     def isEmpty(self):
-        if self.top == null:
+        if self.top == None:
             return True
         else:
             return False
@@ -37,14 +37,25 @@ class Queue:
     
     def enqueue(self, value):
         new_node = Node(value)
-        self.rear.next = new_node
+        new_node.next = self.rear
         self.rear = new_node
+        if not self.front:
+            self.front = self.rear
     
-    def Dequeue(self):
-        temp = self.front
-        self.front.next = front
-        temp.next == null
+    def dequeue(self):
+        if not self.front:
+            raise EmptyQueueException('well then')
+
+        removed_node = self.front
+        self.front = removed_node.next
+        removed_node.next == None
+        return removed_node.value
 
     def peep(self):
+        if not self.front:
+            raise EmptyQueueException('well then')
         front_value = self.front
         return front_value
+
+class EmptyQueueException(AttributeError):
+            pass
