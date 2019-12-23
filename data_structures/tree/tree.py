@@ -65,6 +65,21 @@ class BinarySearchTree(BinaryTree):
                 else:
                     current = current._left
 
+    def contains(self, value):
+        _contains = []
+        if self.root == None:
+            return False
+        current = self.root
+        if value == current.value:
+            return True
+        elif value < current.value:
+            if current._left == value:
+                return True
+    
+
+                
+
+
 class EmptyTree(ValueError):
     pass
 
