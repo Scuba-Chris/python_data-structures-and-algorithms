@@ -11,3 +11,7 @@
 - [array_binary_search](/challenges/array_binary_search)
 ### 4. linked_list
 - [linked_list](/data_structures/linked_list)
+### 5. queues_with_stacks
+- [queues_with_stacks](/challenges/queues_with_stacks)
+### 6. fifo_animal_shelter
+- [fifo_animal_shelter](/challenges/fifo_animal_shelter)
