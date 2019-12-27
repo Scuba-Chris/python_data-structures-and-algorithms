@@ -1,4 +1,4 @@
-import 
+
 
 class Animal:
     def __init__(self):
@@ -16,7 +16,7 @@ class AnimalShelter:
         self.dog_queue = queue()
         self.cat_queue = queue()
     
-    def enqueue(self, value):
+    # def enqueue(self, value):
                 
 
 

@@ -14,10 +14,12 @@ def test_add():
     tree._add(10)
     tree._add(8)
     tree._add(21)
+    tree._add(41)
 
     assert tree.root.value == 10
     assert tree.root._right.value == 21
     assert tree.root._left.value == 8
+    assert tree.root._right._right == 41
 
 def test_pre_order():
     tree = BinarySearchTree()

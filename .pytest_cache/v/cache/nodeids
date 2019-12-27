@@ -12,5 +12,8 @@
   "data_structures/tree/test_tree.py::test_tree",
   "data_structures/tree/test_tree.py::test_root",
   "data_structures/tree/test_tree.py::test_add",
-  "data_structures/tree/test_tree.py::test_pre_order"
+  "data_structures/tree/test_tree.py::test_pre_order",
+  "challenges/array_binary_search/test_array_binary_search.py::test_binary_search_one",
+  "challenges/array_binary_search/test_array_binary_search.py::test_binary_search_neg_one",
+  "challenges/fizz_buzz_tree/test_fizz_buzz_tree.py::test_fizz_buzz"
 ]

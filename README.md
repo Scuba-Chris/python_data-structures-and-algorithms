@@ -15,3 +15,7 @@
 - [queues_with_stacks](/challenges/queues_with_stacks)
 ### 6. fifo_animal_shelter
 - [fifo_animal_shelter](/challenges/fifo_animal_shelter)
+### 7. tree
+- [tree](/data_structures/tree)
+### 8. fizz_buzz
+- [fizz_buzz](/challenges/fizz_buzz_tree)

@@ -1,0 +1,5 @@
+{
+  "data_structures/stacks_and_queues/test_stacks_and_queues.py::test_push": true,
+  "data_structures/tree/test_tree.py::test_add": true,
+  "data_structures/tree/test_tree.py::test_pre_order": true
+}
