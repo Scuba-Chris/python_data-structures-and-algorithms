@@ -3,13 +3,17 @@ class Node:
         self.value = value
         self._left = None
         self._right = None
+        self.arr = []
 
 class BinaryTree:
-    def __init__(self):
-        self.root = None
+    def __init__(self, root=None):
+        self.root = root
 
     def get_root(self):
         return self.root
+
+    def traversal_action(self, value):
+        pass
 
     def pre_order(self, node=None):
         output = []
@@ -46,24 +50,39 @@ class BinarySearchTree(BinaryTree):
     def __init__(self):
         self.root = None
 
-    def _add(self, value):
+    def _add(self, value, root=None):
+        node = Node(value)
+        root = root or self.root
         if self.root == None:
-            self.root = Node(value)
+            self.root = node
             return
-        current = self.root
-        while True:
-            if value > current.value:
-                if not current._right:
-                    current._right = Node(value)
-                    return
-                else:
-                    current = current._right
+
+        if value < root.value:
+            if root._left:
+                self._add(value, root._left)
             else:
-                if not current._left:
-                    current._left = Node(value)
-                    return
-                else:
-                    current = current._left
+                root._left = node
+                return
+        else:
+            if root._right:
+                self._add(value, root._right)
+            else:
+                root._right = node
+                return
+        # current = self.root
+        # while True:
+        #     if value > current.value:
+        #         if not current._right:
+        #             current._right = Node(value)
+        #             return
+        #         else:
+        #             current = current._right
+        #     else:
+        #         if not current._left:
+        #             current._left = Node(value)
+        #             return
+        #         else:
+        #             current = current._left
 
     def contains(self, value):
         _contains = []
