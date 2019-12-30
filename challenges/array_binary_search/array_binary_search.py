@@ -1,5 +1,4 @@
 def binary_search(lst, val):
-    lst.sort()
     left = 0
     right = len(lst)
     while left <= right:

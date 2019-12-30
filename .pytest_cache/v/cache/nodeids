@@ -15,5 +15,9 @@
   "data_structures/tree/test_tree.py::test_pre_order",
   "challenges/array_binary_search/test_array_binary_search.py::test_binary_search_one",
   "challenges/array_binary_search/test_array_binary_search.py::test_binary_search_neg_one",
-  "challenges/fizz_buzz_tree/test_fizz_buzz_tree.py::test_fizz_buzz"
+  "challenges/fizz_buzz_tree/test_fizz_buzz_tree.py::test_fizz_buzz",
+  "challenges/breadth_first/test_breadth_first.py::test_empty_tree",
+  "challenges/breadth_first/test_breadth_first.py::test_add_root",
+  "challenges/breadth_first/test_breadth_first.py::test_add",
+  "challenges/breadth_first/test_breadth_first.py::test_breadth_first"
 ]
