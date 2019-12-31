@@ -1,4 +1,4 @@
-
+from data_structures.stacks_and_queues.stacks_and_queues import Queue
 
 class Animal:
     def __init__(self):
@@ -13,8 +13,8 @@ class Dog(Animal):
 class AnimalShelter:
     def __init__(self):
         self.value = None
-        self.dog_queue = queue()
-        self.cat_queue = queue()
+        self.dog_queue = Queue()
+        self.cat_queue = Queue()
     
     # def enqueue(self, value):
                 
