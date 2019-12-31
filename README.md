@@ -19,3 +19,5 @@
 - [tree](/data_structures/tree)
 ### 8. fizz_buzz
 - [fizz_buzz](/challenges/fizz_buzz_tree)
+### 9. breadth_first
+- [breadth_first](/challenges/breadth_first)
