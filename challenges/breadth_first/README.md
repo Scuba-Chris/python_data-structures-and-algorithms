@@ -11,5 +11,4 @@ space (O)n
 time (O)n
 
 ## Solution
-<!-- Embedded whiteboard image -->
-forgot to take a piture of the code...
+![](../assets/breadth_first.jpg)
