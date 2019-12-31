@@ -1,5 +1,6 @@
 from data_structures.tree.tree import BinarySearchTree
-from data_structures.stacks_and_queues.stacks_and_queues import Queue
+# from data_structures.stacks_and_queues.stacks_and_queues import Queue
+from collections import deque
 
 tree = BinarySearchTree()
 
@@ -8,17 +9,17 @@ def breadth_first(tree):
         return None
     
     new_lst = []
-    q = Queue()
-    q.enqueue(tree.root)
-    current = q.dequeue()
+    q = deque()
+    q.appendleft(tree.root)
+    current = q.pop()
 
     while len(q):
-        q.dequeue()
+        q.pop()
         new_lst.append(current.value)
         if current._left:
-            q.enqueue(current._left)
+            q.appendleft(current._left)
         if current._right:
-            q.enqueue(current._right)
+            q.appendleft(current._right)
     return new_lst
 
 class Node:
@@ -38,19 +39,19 @@ class BinaryTree:
             self.root = node
             return
 
-        q = Queue()
-        q.enqueue(self.root)
+        q = deque()
+        q.appendleft(self.root)
 
         while True:
-            current = q.dequeue()
+            current = q.pop()
             if current._left:
-                q.enqueue(current._left)
+                q.appendleft(current._left)
             else:
                 current._left = node
                 break
             
             if current._right:
-                q.enqueue(current._right)
+                q.appendleft(current._right)
             else:
                 current._right = node
                 break
