@@ -1,7 +1,7 @@
 def binary_search(lst, val):
     left = 0
     right = len(lst)
-    while left <= right:
+    while len(lst) > 0:
         print(left, 'left')
         print(right, 'right')
         mid = (left + right) // 2 
@@ -10,8 +10,8 @@ def binary_search(lst, val):
         if lst[mid] == val:
             return mid
         elif lst[mid] < val:
-            left = mid + 1
+            left = mid
         elif lst[mid] > val:
-            right = mid - 1
+            right = mid
         
 print(binary_search([8, 5 , 52, 15, 150, 81], 15))
