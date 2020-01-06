@@ -21,3 +21,5 @@
 - [fizz_buzz](/challenges/fizz_buzz_tree)
 ### 9. breadth_first
 - [breadth_first](/challenges/breadth_first)
+### 10. find_maximum_value
+- [find.maximum_value](/challenges/maximum_value)
