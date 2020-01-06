@@ -15,7 +15,7 @@ def return_max(tree):
 
     q = deque()
     q.appendleft(tree.root)
-    current = q.pop()
+    current = tree.root
     largest_value = tree.root.value
     while len(q):
         current = q.pop()

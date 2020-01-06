@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, value), next=None:
+    def __init__(self, value, next=None):
         self.value = value 
         self.next = next
 
@@ -14,16 +14,17 @@ class Stack:
         self.top = new_top
 
     def pop(self):
-        # temp = self.top
         new_top = self.top.next
         self.top = new_top
         return new_top.value
 
     def peek(self):
+        if not self.top:
+            raise EmptyStackException('stack empty')
         top_value = self.top.value
         return top_value
     
-    def isEmpty(self):
+    def is_empty(self):
         if self.top == None:
             return True
         else:
@@ -37,10 +38,11 @@ class Queue:
     
     def enqueue(self, value):
         new_node = Node(value)
-        new_node.next = self.rear
-        self.rear = new_node
-        if not self.front:
-            self.front = self.rear
+        if self.front == None:
+            self.front = new_node
+        else:
+            self.rear.next = new_node
+            self.rear = new_node
     
     def dequeue(self):
         if not self.front:
@@ -51,11 +53,20 @@ class Queue:
         removed_node.next == None
         return removed_node.value
 
-    def peep(self):
+    def peek(self):
         if not self.front:
             raise EmptyQueueException('well then')
         front_value = self.front
         return front_value
 
+    def is_empty(self):
+        if not self.front:
+            return True
+        else:
+            return False
+
 class EmptyQueueException(AttributeError):
-            pass
+    pass
+
+class EmptyStackException(AttributeError):
+    pass
