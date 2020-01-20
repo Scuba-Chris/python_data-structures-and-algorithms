@@ -22,4 +22,9 @@
 ### 9. breadth_first
 - [breadth_first](/challenges/breadth_first)
 ### 10. find_maximum_value
-- [find.maximum_value](/challenges/maximum_value)
+- [find_maximum_value](/challenges/maximum_value)
+### 11.
+### 12.
+### 13.
+### 14. hashtable
+- [hashtable](/data_structures/hashtable)
