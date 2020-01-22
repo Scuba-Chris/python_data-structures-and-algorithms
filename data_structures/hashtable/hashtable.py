@@ -11,7 +11,7 @@ class HashTable:
 
     def __init__(self):
         self.bucket = [LinkedList() for i in range(hash_table_size)]
-        self.keys = {}
+        self.keys = set()
 
     def hash(self, key):
         k = 0
@@ -20,8 +20,10 @@ class HashTable:
         return k % len(self.bucket)
 
     def add(self, key, value):
+        if key in self.keys:
+            return
         key_hash = self.hash(key)
-        self.keys = key_hash
+        self.keys.add(key)
         bucket_ll = self.bucket[key_hash]
 
         node = None
@@ -59,4 +61,11 @@ class HashTable:
                     return True
             current = current.next
         return False
+
+    def __getitem__(self, index):
+        if isinstance(index, str):
+            return self.get(index)
+        if isinstance(index, int):
+            return list(self.keys)[index]
+        raise ValueError
                 
