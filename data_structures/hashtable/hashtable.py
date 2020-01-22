@@ -7,12 +7,7 @@ I watched a couple videos and read some articles on medium.com to help get me th
 
 hash_table_size = 32
 
-# class Node:
-#     self.value = value
-#     self.next = None
-
 class HashTable:
-    # node = Node()
 
     def __init__(self):
         self.bucket = [LinkedList() for i in range(hash_table_size)]
@@ -37,7 +32,7 @@ class HashTable:
             current = current.next
 
         if node == None:
-            bucket_ll.append({key.value})
+            bucket_ll.append({key : value})
         else:
             node.value[key] = value
 

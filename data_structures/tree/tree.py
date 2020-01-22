@@ -69,20 +69,7 @@ class BinarySearchTree(BinaryTree):
             else:
                 root._right = node
                 return
-        # current = self.root
-        # while True:
-        #     if value > current.value:
-        #         if not current._right:
-        #             current._right = Node(value)
-        #             return
-        #         else:
-        #             current = current._right
-        #     else:
-        #         if not current._left:
-        #             current._left = Node(value)
-        #             return
-        #         else:
-        #             current = current._left
+
 
     def contains(self, value):
         _contains = []
