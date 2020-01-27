@@ -28,3 +28,7 @@
 ### 13.
 ### 14. hashtable
 - [hashtable](/data_structures/hashtable)
+### 15. repeated_word
+- [repeated_word] (challenges/repeated_words)
+### 16. tree_intersections
+- [tree_intersections] (challenges/tree_intersections)
