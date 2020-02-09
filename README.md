@@ -36,3 +36,5 @@
 - [left_join](challenges/left_join)
 ### 18. graph
 - [graph](data_structures/graph)
+### 19. depth_first
+-[depth_first](challenges/depth_first)
