@@ -20,9 +20,9 @@ class BinaryTree:
         if node == None:
             node = self.root
         output.append(node.value)
-        if node._left != None:
+        if node._left == None:
             output += self.pre_order(node._left)
-        if node._right != None:
+        if node._right == None:
             output += self.pre_order(node._right)
         return output
     
@@ -31,18 +31,18 @@ class BinaryTree:
         if node == None:
             node = self.root
         if node._left == None:
-            output += self.pre_order(node._left)
+            output += self.in_order(node._left)
         output.append(node.value)
         if node._right == None:
-            output += self.pre_order(node._right)
+            output += self.in_order(node._right)
         return output
 
     def post_order(self, node=None):
         output = []
         if node._left == None:
-            output += self.pre_order(node._left)
+            output += self.post_order(node._left)
         if node._right == None:
-            output += self.pre_order(node._right)
+            output += self.post_order(node._right)
         output.append(node.value)
         return output
 
